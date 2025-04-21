@@ -44,7 +44,7 @@ public class Main {
         do {
             System.out.println("\n----- TERMINAL -----\n");
             System.out.println("1 --- Cadastrar Produto");
-            System.out.println("2 --- Listas Produtos");
+            System.out.println("2 --- Listar Produtos");
             System.out.println("3 --- Procurar Produto");
             System.out.println("4 --- Deletar Produto\n");
 
@@ -285,7 +285,7 @@ public class Main {
     }
 
     private static int calcular_ID() {
-        int id = 0;
+        int id = 1;
         try {
             Connection conn = DriverManager.getConnection("jdbc:sqlite:database.sqlite");
             String query = "SELECT MAX(id) AS max_id FROM products";
